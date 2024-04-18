@@ -1,32 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Starlink Beam Planner</title>
-  <style>
-      body {
-          font-family: Helvetica, sans-serif;
-      }
-  
-      @media (min-width: 750px) {
-          body {
-              width: 750px;
-              margin: 0 auto;
-          }
-      }
-
-      table {
-          margin: auto;
-      }
-
-      table th, table td {
-          padding-left: 1em;
-      }
-  </style>
-</head>
-<body>
-
-
-
 <h1>Starlink Beam Planner</h1>
 
 <p>To provide internet to a user, a satellite forms a "beam" towards that user and the user forms a beam towards the satellite. After doing this the satellite and user can form a high-bandwidth wireless link.</p>
@@ -40,7 +11,7 @@
     <li>On each Starlink satellite, no two beams of the same color may be pointed within 10 degrees of each other, or they will interfere with one another.</li>
 </ul>
 
-<div style="text-align: center"><img src="resources/diagram.svg" /></div>
+<div style="text-align: center;background-color:white"><img src="resources/diagram.svg" /></div>
 
 
 
@@ -70,6 +41,3 @@
 <p>Test results will be printed to the console. This includes user coverage and runtime as well as failure to satisfy constraints.</p>
 
 <div style="text-align: left"><img src="resources/output.png" style="width: 75%"/></div>
-
-</body>
-</html>
