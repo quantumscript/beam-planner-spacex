@@ -1,0 +1,4 @@
+min_coverage 1.0
+user 0 6371 0 0
+user 1 6372 0 0
+sat 0 6921 0 0

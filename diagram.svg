@@ -1,0 +1,73 @@
+<svg version="1.1" width="480" height="200" viewBox="0 0 480 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style>
+        text {
+            font-family: "Segue UI", Tacoma, Verdana, sans-serif;
+        }
+        line {
+            stroke-width: 5px;
+            stroke: #F80;
+        }
+        path {
+            stroke: #000;
+            stroke-width: 2px;
+            fill: none;
+        }
+        ellipse {
+            stroke: #000;
+            stroke-width: 2px;
+            fill: none;
+        }
+        rect {
+            stroke: #000;
+            fill: #fff;
+        }
+    </style>
+    <g display="none">
+        <g id="user">
+            <rect x="0" y="0" width="55" height="28" />
+            <text x="10" y="20" text-anchor="start">User</text>
+        </g>
+        <g id="satellite">
+            <rect x="0" y="0" width="180" height="28" />
+            <text x="20" y="20" text-anchor="start">Starlink Satellite</text>
+        </g>
+        <g id="interferer">
+            <rect x="0" y="0" width="220" height="28" />
+            <text x="20" y="20" text-anchor="start">Non-Starlink Interferer</text>
+        </g>
+    </g>
+
+    <g transform="translate(0, 0)">
+        <path d="M120,172 l-75,-75 h150 l-75,75" />
+        <path d="M120,172 V10" stroke-dasharray="5" />
+        <path d="M120,80 h-15" stroke-dasharray="3" />
+        <line x1="90" y1="32" x2="120" y2="172" />
+        <text x="125" y="80" text-anchor="start" alignment-baseline="middle">θ≤45</text>
+        <use xlink:href="#satellite" transform="translate(5, 5)" />
+        <use xlink:href="#user" transform="translate(95, 172)" />
+    </g>
+
+    <g transform="translate(250, 0)">
+        <path d="M110,100 h25" stroke-dasharray="3" />
+        <line x1="90" y1="32" x2="0" y2="100" />
+        <line x1="90" y1="32" x2="30" y2="172" />
+        <line x1="90" y1="32" x2="130" y2="172" />
+        <line x1="90" y1="32" x2="190" y2="172" />
+        <text x="145" y="100" text-anchor="start" alignment-baseline="middle">θ≥10</text>
+        <use xlink:href="#satellite" transform="translate(5, 5)" />
+        <use xlink:href="#user" transform="translate(5, 172)" />
+        <use xlink:href="#user" transform="translate(100, 172)" />
+        <use xlink:href="#user" transform="translate(165, 172)" />
+    </g>
+    <!--
+    <g transform="translate(500, 0)">
+        <path d="M95,110 h20" stroke-dasharray="3" />
+        <line x1="110" y1="32" x2="120" y2="172" />
+        <line x1="90" y1="92" x2="120" y2="172" />
+        <text x="120" y="110" text-anchor="start" alignment-baseline="middle">θ≥20</text>
+        <use xlink:href="#interferer" transform="translate(5, 5)" />
+        <use xlink:href="#satellite" transform="translate(5, 65)" />
+        <use xlink:href="#user" transform="translate(95, 172)" />
+    </g>
+    -->
+</svg>
