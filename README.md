@@ -40,7 +40,7 @@
     <li>On each Starlink satellite, no two beams of the same color may be pointed within 10 degrees of each other, or they will interfere with one another.</li>
 </ul>
 
-<div style="text-align: center"><img src="diagram.svg" /></div>
+<div style="text-align: center"><img src="resources/diagram.svg" /></div>
 
 
 
@@ -69,7 +69,7 @@
 
 <p>Test results will be printed to the console. This includes user coverage and runtime as well as failure to satisfy constraints.</p>
 
-<div style="text-align: left"><img src="output.png" style="width: 70%"/></div>
+<div style="text-align: left"><img src="resources/output.png" style="width: 75%"/></div>
 
 </body>
 </html>
